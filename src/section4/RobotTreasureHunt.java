@@ -16,32 +16,36 @@ import org.jointheleague.graphical.robot.Robot;
 public class RobotTreasureHunt implements KeyEventDispatcher{
 
 	// 1. Create a new mini robot (type "mini" inside the parentheses)
-	
+	Robot SPENCER=new Robot("mini");
 	private void goUp() throws InterruptedException {
 		// 2. Make the robot move up the screen (use setAngle(angle) and microMove(distance))
-		
+		SPENCER.setAngle(270); 
+		SPENCER.microMove(1);
 	}
 
 	private void goDown() throws InterruptedException{
 		// 3. make the robot move down the screen (use setAngle(angle) and microMove(distance))
-		
+		SPENCER.setAngle(180);
+		SPENCER.microMove(2);
 	}
 
 	private void turnLeft() throws InterruptedException{
 		// 4. Make the robot turn to the left (use setAngle(angle) and microMove(distance))
-
+SPENCER.setAngle(270);
+SPENCER.microMove(1);
 	}
 
 	private void turnRight() throws InterruptedException{
 		// 5. make the robot turn to the right (use setAngle(angle) and microMove(distance))
-		
+		SPENCER.setAngle(90);
+		SPENCER.microMove(2);
 	}
 
 	private void spaceBarWasPressed() {
 
 		// 5. Change ROBOTNAME below to match the name of the robot you created in step 1.  THEN, remove the slashes at the beginning of the next two lines
-		//int robotXLocation = ROBOTNAME.getX();
-		//int robotYLocation = ROBOTNAME.getY();
+		int robotXLocation = SPENCER.getX();
+		int robotYLocation = SPENCER.getY();
 		
 		// 6. Print the robotXLocation and robotYLocation variables to the console 
 		
