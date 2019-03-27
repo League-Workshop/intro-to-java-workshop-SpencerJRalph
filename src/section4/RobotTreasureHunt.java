@@ -19,14 +19,14 @@ public class RobotTreasureHunt implements KeyEventDispatcher{
 	Robot SPENCER=new Robot("mini");
 	private void goUp() throws InterruptedException {
 		// 2. Make the robot move up the screen (use setAngle(angle) and microMove(distance))
-		SPENCER.setAngle(270); 
+		SPENCER.setAngle(0); 
 		SPENCER.microMove(1);
 	}
 
 	private void goDown() throws InterruptedException{
 		// 3. make the robot move down the screen (use setAngle(angle) and microMove(distance))
 		SPENCER.setAngle(180);
-		SPENCER.microMove(2);
+		SPENCER.microMove(1);
 	}
 
 	private void turnLeft() throws InterruptedException{
@@ -38,7 +38,7 @@ SPENCER.microMove(1);
 	private void turnRight() throws InterruptedException{
 		// 5. make the robot turn to the right (use setAngle(angle) and microMove(distance))
 		SPENCER.setAngle(90);
-		SPENCER.microMove(2);
+		SPENCER.microMove(1);
 	}
 
 	private void spaceBarWasPressed() {
@@ -48,16 +48,16 @@ SPENCER.microMove(1);
 		int robotYLocation = SPENCER.getY();
 		
 		// 6. Print the robotXLocation and robotYLocation variables to the console 
-		
+		System.out.println(robotXLocation+robotYLocation);
 		// 7. If robot is at same location as the little girl
 		//      --make a pop-up tell the robot where to go next
-		
+		JOptionPane.showMessageDialog(null, "go away from the girl");
 		// 8. Give the user subsequent clues at different locations on the image
 		// (pirate robot, swamp, parrots, etc.)
-		
+		JOptionPane.showMessageDialog(null, "look twords the swamp, or parrot");
 		// 9.  If the robot is in the final location
 		//     --call the treasureFound() method
-		
+		//treasureFound();
 	}
 
 	private void go() {
